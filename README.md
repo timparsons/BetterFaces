@@ -6,7 +6,7 @@ Do you use JSF, but want to use a component library that is light weight and mak
 
 BetterFaces is just that, light weight, and makes things better.  Rather than adding new widgets and the like, BetterFaces renders HTML in a better way (i.e. not using tables to organize a radio group) that is in line with HTML standards.
 
-### Sounds pretty cool...how do I use it?
+### Sounds pretty cool, how do I use it?
 Simple!  BetterFaces is a Maven project, so all you need to do is include it as a dependency in your JSF web application*:
 
 ```xml
@@ -17,4 +17,14 @@ Simple!  BetterFaces is a Maven project, so all you need to do is include it as 
 </dependency>
 ```
 
-*until this project is pushed to http://mvnrepository.com/, you will need to include the jar in your project TODO -> show how to do that
+*until this project is pushed to http://mvnrepository.com/, you will need to include the jar in your project.  You can download the jar and reference to its location in your pom: 
+```xml
+<dependency>
+  <groupId>io.timparsons</groupId>
+  <artifactId>betterfaces</artifactId>
+  <version>0.0.1</version>
+  <scope>system</scope>
+  <systemPath>${project.basedir}/src/main/resources/betterfaces-0.0.1.jar</systemPath>
+</dependency>
+```
+
